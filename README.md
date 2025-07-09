@@ -42,3 +42,11 @@ Simulates an error based on the query parameters. The following parameters are s
   - exact number: `latency=100`
   - random range: `latency=100-200`
   - random range shortcut: `latency=-100` (random between 0 and 100)
+
+Examples:
+```bash
+curl "http://localhost:8080/simulate?status=200"
+curl "http://localhost:8080/simulate?status=500&stdout=Hello%20World&stderr=Error%20Message&latency=100"
+curl "http://localhost:8080/simulate?status=404&stdout=Not%20Found&latency=200-300"
+curl "http://localhost:8080/simulate?status=200&stdout=OK&latency=-100"
+```
