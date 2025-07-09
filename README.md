@@ -20,8 +20,6 @@ Then you can access the server at `http://localhost:8080`.
 
 **Run via Docker**
 
-_coming soon_
-
 ```
 docker run -p 8080:8080 -it --rm ghcr.io/aeimer/go-error-simulator:latest
 ```

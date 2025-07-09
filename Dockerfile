@@ -18,3 +18,6 @@ EXPOSE 8080
 
 # Set the environment variable to specify the port
 ENV PORT=8080
+
+LABEL org.opencontainers.image.source=https://github.com/aeimer/go-error-simulator
+LABEL org.opencontainers.image.licenses=MIT
